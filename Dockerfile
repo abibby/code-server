@@ -16,5 +16,6 @@ RUN mkdir /go && \
     sudo ln -s /go/bin/go1.17.2 /usr/local/bin/go
 
 ENV GOPATH=/config/go
+ENV GOROOT=/config/sdk/go1.17
 
 COPY /root /
