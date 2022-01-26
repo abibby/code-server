@@ -15,4 +15,6 @@ RUN mkdir /go && \
     sudo apt remove -y golang && sudo apt -y autoremove && \
     sudo ln -s /go/bin/go1.17.2 /usr/local/bin/go
 
+ENV GOPATH=/config/go
+
 COPY /root /
